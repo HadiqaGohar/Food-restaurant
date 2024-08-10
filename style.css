@@ -1,0 +1,303 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Menu button for mobile view */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #cc5200;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff6600; /* Default button color */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.btn:hover {
+    background-color: #cc5200; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+.btn:active {
+    transform: scale(0.98); /* Slightly decrease button size when clicked */
+}
+
+/* Home Section Styles */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.home .content {
+    max-width: 50%;
+}
+
+.home .content h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Speciality Section Styles */
+.speciality {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.speciality-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.speciality-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.speciality-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Order Section Styles */
+/* Order Section Styles */
+.order {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.order h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.order-container div {
+    width: 100%;
+    max-width: 400px; /* Limit the input width */
+}
+
+.order-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.order-container input[type="text"]:focus {
+    border-color: #ff6600; /* Change border color on focus */
+}
+
+.order-now {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6600;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.order-now:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+.order-now:active {
+    transform: scale(0.98);
+}
+/* Review Section Styles */
+.review {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.review h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-person {
+    flex: 1 1 calc(33.333% - 20px); /* Three reviews per row */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.review-person h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ff6600;
+}
+
+.review-person p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.review-person .image {
+    margin-top: 10px;
+}
+
+.review-person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
